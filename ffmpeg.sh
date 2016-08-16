@@ -28,8 +28,9 @@ make
 make install
 
 cd /usr/local/ffmpeg_build
-git clone --depth 1 git://git.code.sf.net/p/opencore-amr/fdk-aac
-cd fdk-aac
+curl -L -O http://jaist.dl.sourceforge.net/project/opencore-amr/fdk-aac/fdk-aac-0.1.1.tar.gz
+tar xzvf fdk-aac-0.1.1.tar.gz
+cd fdk-aac-0.1.1
 autoreconf -fiv
 ./configure --prefix="/usr/local/ffmpeg_build" --disable-shared
 make

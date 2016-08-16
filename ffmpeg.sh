@@ -74,7 +74,7 @@ make install
 make distclean
 
 cd /usr/local/ffmpeg_build
-git clone --depth 1 https://chromium.googlesource.com/webm/libvpx.git
+git clone --depth 1 https://github.com/webmproject/libvpx.git
 cd libvpx
 ./configure --prefix="/usr/local/ffmpeg_build" --disable-examples
 make
